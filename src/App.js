@@ -57,7 +57,7 @@ class App extends Component {
   }
 
   render () {
-    let elementToRender = <div>No location found :(</div>
+    let elementToRender = <Loader/>
 
     if (this.state.currentLocationInfo === null) return elementToRender;
     if (this.state.currentLocationForecast === null) return elementToRender;
@@ -76,17 +76,18 @@ class App extends Component {
       return objectToReturn;
     });
 
-    elementToRender = <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
-      <div onClick={this.handleClick}>
+    elementToRender = <div className={"flip-card-component-inner" + (this.state.isFlipped ? ' clicked' : '')}
+                           onClick={(e) => this.handleClick(e)}>
+      <div className={"flip-card-component-front"}>
         <Today feelLikeTemp={app_temp} humidity={rh} temperature={temp} weatherConditionsCode={Number(weather.code)}
                cityName={city_name}/>
         <Divider/>
         <Week nextSevenDays={weekDaysForecastArray}/>
       </div>
-      <>
+      <div className={"flip-card-component-back"}>
         <Map lng={this.state.lng} lat={this.state.lat}/>
-      </>
-    </ReactCardFlip>
+      </div>
+    </div>
     return elementToRender;
   }
 }

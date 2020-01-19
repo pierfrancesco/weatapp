@@ -8,19 +8,10 @@ import config from '../config';
  * @param lng
  */
 const initMap = (mapElementId, lat, lng) => {
-  loadScript(`${config.map.src}`).then(res => {
-    let map = new ol.Map({
-      target: mapElementId,
-      layers: [
-        new ol.layer.Tile({
-          source: new ol.source.OSM()
-        })
-      ],
-      view: new ol.View({
-        center: ol.proj.fromLonLat([lng, lat]),
-        zoom: 4
-      })
-    });
+  loadScript(`${config.map.src}?key=${config.map.key}`).then(res => {
+    let position = {lat: lat, lng: lng};
+    let map = new google.maps.Map(document.getElementById(mapElementId), {zoom: 15, center: position});
+    let marker = new google.maps.Marker({position: position, map: map});
   }).catch(err => {
     // TODO:
     console.log(err);

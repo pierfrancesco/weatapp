@@ -32,8 +32,7 @@
     "babel-polyfill": "^6.26.0",
     "custom-event-polyfill": "^1.0.6",
     "promise-polyfill": "^8.1.0",
-    "prop-types": "^15.7.2",
-    "react-card-flip": "^1.0.10"
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "react": "16.9.0",

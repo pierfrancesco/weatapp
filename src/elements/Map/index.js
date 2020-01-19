@@ -15,7 +15,7 @@ const Map = ({lat, lng}) => {
   useEffect(() => {
     setTimeout(() => {
       initMap(mapId, lat, lng);
-    },1000)
+    }, 1000)
 
   }, []);
 

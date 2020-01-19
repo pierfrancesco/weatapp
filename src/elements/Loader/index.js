@@ -7,7 +7,7 @@ import './index.css';
  * @constructor
  */
 const Loader = () => {
-  return <div className={""}/>
+  return <div className={"loaderComponent"}/>
 }
 
 export default Loader;

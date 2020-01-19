@@ -2,12 +2,15 @@
   position: relative;
   min-width: 139px;
   text-align: center;
+  display: table;
+  margin: 0 auto;
 }
 
 .locationText {
-  display: inline;
-  height: 55px;
-  width: 105px;
+  position: relative;
+  min-width: 139px;
+  display: table;
+  margin: 0 auto;
   color: #FFFFFF;
   font-family: 'Open Sans';
   font-size: 39.93px;
@@ -17,6 +20,8 @@
 }
 
 .pinComponent {
+  display: table;
+  margin: 16px 10px;
   float: left;
   width: 17px;
   height: 23px;

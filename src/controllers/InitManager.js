@@ -4,9 +4,7 @@ import App from '../App';
 import config from '../config'
 
 const render = (rootElementId = config['root-element']) => {
-  let elementRoot = document.getElementById(rootElementId);
-  // TODO: check if rootElement is present before render
-
+  let elementRoot = document.getElementById(rootElementId) || document.getElementById('root');
   ReactDOM.render(
     <App/>,
     elementRoot

@@ -11,6 +11,7 @@ const WeatApp = new function() {
   this.render = render;
 };
 
+// auto render the app
 render();
 
 export default WeatApp;
