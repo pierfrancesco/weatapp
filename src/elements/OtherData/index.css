@@ -1,0 +1,11 @@
+
+.otherDataComponent {
+  position: relative;
+  text-align: center;
+  top: 8px;
+  margin: auto;
+  color: white;
+  height: 55px;
+  width: 117px;
+  font-family: 'Open Sans', sans-serif;
+}

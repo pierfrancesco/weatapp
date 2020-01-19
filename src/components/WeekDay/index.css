@@ -1,0 +1,8 @@
+.weekDayComponent {
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  margin: auto;
+  max-width: 95px;
+  min-height: 140px;
+}

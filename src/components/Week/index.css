@@ -1,0 +1,6 @@
+.weekComponent {
+  position: relative;
+  margin-top: 23px;
+  display: inline-flex;
+  min-width: 100%;
+}

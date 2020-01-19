@@ -1,0 +1,8 @@
+.day {
+  position: relative;
+  width: 57px;
+  height: 19px;
+  color: white;
+  line-height: 19px;
+  font-family: Open SansSerif;
+}

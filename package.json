@@ -1,0 +1,45 @@
+{
+  "name": "weatapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server --open",
+    "build": "babel-node ./node_modules/webpack/bin/webpack --display-modules;"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/node": "7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "1.0.1",
+    "file-loader": "2.0.0",
+    "html-webpack-plugin": "3.2.0",
+    "node-sass": "^4.13.1",
+    "path": "0.12.7",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "custom-event-polyfill": "^1.0.6",
+    "promise-polyfill": "^8.1.0",
+    "prop-types": "^15.7.2",
+    "react-card-flip": "^1.0.10"
+  },
+  "peerDependencies": {
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

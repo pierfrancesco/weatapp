@@ -1,0 +1,12 @@
+.dataComponent {
+  position: relative;
+  min-height: 19px;
+  width: 48px;
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  display: inline;
+  top: 19px;
+}

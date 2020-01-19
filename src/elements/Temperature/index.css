@@ -1,0 +1,12 @@
+.temperatureContent {
+  margin: auto;
+  position: relative;
+  text-align: center;
+  width: 95px;
+  height: 75px;
+  color: white;
+  line-height: 75px;
+  font-size: 55px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}

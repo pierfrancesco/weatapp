@@ -1,0 +1,7 @@
+.todayComponent {
+  position: relative;
+  min-width: 144px;
+  min-height: 357px;
+  margin: auto;
+  text-align: center;
+}
