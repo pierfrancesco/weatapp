@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactCardFlip from 'react-card-flip';
 import './public/css/global.css';
 import { getLocation } from './controllers/GeolocationManager';
 import Today from './components/Today';
